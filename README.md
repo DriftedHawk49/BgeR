@@ -1,2 +1,2 @@
 # BgeR
-Background shuffler for Linux
+Background shuffler for Linux - Development
