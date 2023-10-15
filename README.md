@@ -13,26 +13,7 @@ Download the binary from release section, or compile it yourself. Then add the e
 
   You can add new images to wallpaper folder while the tool is running and it will pick up new images automatically. No need to re-deploy the tool after adding or removing any images. Supports only `.jpeg OR .jpg` files.
 
-  To run it in detached mode, use systemd service to manage auto startup, start, stop and other background functionalities.
-
-  To use systemd service, you need to get the value of XDG_CURRENT_DESKTOP env variable and add its value in service file. replace `gnome` with the value that you get by running `echo $XDG_CURRENT_DESKTOP` in terminal.
-
-  A simple systemd service file will look like this : 
-
-```
-[Unit]
-Description=BackgroundR
-After=network.target
-
-[Service]
-Environment="XDG_CURRENT_DESKTOP=gnome"
-ExecStart=<path to bger exectuable> -dir <path to wallpapers folder> -dur 30
-Type=simple
-Restart=always
-
-[Install]
-WantedBy=default.target
-```
+  To run it in detached mode, use nohup in linux.
 
 ## Contributing
 Support for several other Desktop environments is still to be added, and tested. You are welcome to suggest better approach(es) and enhance the experience.  
