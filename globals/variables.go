@@ -1,5 +1,5 @@
 /*
-	Contains global variables which are set/unset while the tool lifecycle
+	Contains global variables which are set/unset for the lifecycle of tool
 */
 
 package globals
