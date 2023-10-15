@@ -11,7 +11,7 @@ import (
 func main() {
 	/*
 		*	Logic
-			1. Check for arguements, only 2 arguements are valid, folder containing files, and shuffle time. use golang flags
+			1. Check for arguments, only 2 arguments are valid, folder containing files, and shuffle time. use golang flags
 		*	2. Identify OS type. If not linux, return
 		*	3. Identify Desktop Environment -- tested on gnome
 			4. check whether the arg is a valid directory.
