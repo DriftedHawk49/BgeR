@@ -88,6 +88,11 @@ func GetAllImageFilePathsFromDirectory(dirPath string) []string {
 			continue
 		}
 
+		nameArr := strings.Split(f.Name(), ".")
+		if !(strings.EqualFold(nameArr[len(nameArr)-1], "jpg") || strings.Contains(nameArr[len(nameArr)-1], "jpeg")) {
+			continue
+		}
+
 		result = append(result, filepath.Join(dirPath, f.Name()))
 	}
 
