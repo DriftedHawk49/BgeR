@@ -48,7 +48,7 @@ func GetDE() (globals.DE_TYPE, error) {
 		return globals.DE_XFCE, nil
 	}
 
-	return globals.DE_INVALID, errors.New("cannot detect desktop environment")
+	return globals.DE_INVALID, fmt.Errorf("cannot detect desktop environment, returned value : %s", de)
 }
 
 /*
